@@ -1190,6 +1190,7 @@ def main():
                 polygons[name] = read_polygon_from_file(fname)
         elif choice == '2':
             # Save polygon to file
+            print(list(polygons.keys()))
             name = input("Enter polygon name to save: ")
             fname = input("Enter filename: ")
             if name in polygons:
