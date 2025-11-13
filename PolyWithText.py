@@ -1226,8 +1226,8 @@ def main():
                     else:
                         print(f"Error: Union operation failed or returned invalid result.")
             elif op == 'intersection' or op == 'i':
-            a = input("Name first polygon: ")
-            b = input("Name second polygon: ")
+                a = input("Name first polygon: ")
+                b = input("Name second polygon: ")
                 if a not in polygons or b not in polygons:
                     print("Error: One or both polygons not found.")
                 else:
@@ -1252,7 +1252,7 @@ def main():
                 if a not in polygons or b not in polygons:
                     print("Error: One or both polygons not found.")
                 else:
-            resultname = input("Result polygon name: ")
+                    resultname = input("Result polygon name: ")
                     result = difference(polygons[a], polygons[b])
                     if result and len(result) >= 3:
                         polygons[resultname] = result
